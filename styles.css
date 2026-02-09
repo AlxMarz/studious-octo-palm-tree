@@ -1,6 +1,5 @@
-text
+/* text
 
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +33,7 @@ body {
     padding: 0 20px;
 }
 
-/* Navigation */
+
 .navbar {
     background: var(--white);
     box-shadow: var(--shadow);
@@ -88,7 +87,7 @@ body {
     transition: 0.3s;
 }
 
-/* Hero Section */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -134,7 +133,7 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
-/* Sections */
+
 section {
     padding: 80px 0;
 }
@@ -146,7 +145,6 @@ section {
     color: var(--text-dark);
 }
 
-/* About Section */
 .about {
     background: var(--bg-light);
 }
@@ -183,7 +181,7 @@ section {
     font-size: 0.9rem;
 }
 
-/* Projects Section */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -240,4 +238,4 @@ section {
 
 .btn-small:hover {
     background: var(--secondary-color);
-}
+} */

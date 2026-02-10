@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Portfolio of [Alexander M.] - IT professional with CompTIA A+ certification">
     <title>[Alexander M.] - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 </head>
 
 <body>
     <!-- Navigation -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Alexander M.</a>
@@ -47,12 +50,13 @@
     </nav>
 
     <!-- Hero Section -->
-    <section  class="text-white d-flex allign-items-center" style="min-height:100vh; background-image:linear-gradient(to bottom, #58b45cd6, #0a0a0a); background-size: cover; background-position: center;">
+    <section class="text-white d-flex allign-items-center"
+        style="min-height:100vh; background-image:linear-gradient(to bottom, #58b45cd6, #0a0a0a); background-size: cover; background-position: center;">
         <div class="container text-center">
             <h1 class="display-3">Hi, I'm <strong>Alexander M.</strong></h1>
             <p class="lead mb-4">CompTIA A+ Certified | Designer | Creator</p>
-            <a class="btn btn-primary btn-lg" href="#projects" >View My Work</a>
-        </div> 
+            <a class="btn btn-primary btn-lg" href="#projects">View My Work</a>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -81,14 +85,14 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section>
         <div class="container">
             <h2 class="section-title text-center">My Projects</h2>
-            <div class="projects-grid">
+            <div class="row">
                 <!-- Project 1 -->
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
+                        <h5 class="card-title">Project 11</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">about the project</h6>
                         <p class="card-text">please hire me after looking at my projects </p>
                         <a href="#" class="card-link">Card link</a>
@@ -117,38 +121,60 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="py-6">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="mb-4 text-center">Get In Touch</h2>
+
             <p class="contact-intro">I'm always open to new opportunities and collaborations.</p>
-            <div class="contact-methods">
-                <a href="mailto:your.email@example.com" class="contact-item">
-                    <span>📧</span>
-                    <span>your.email@example.com</span>
-                </a>
-                <a href="https://github.com/yourusername" class="contact-item" target="_blank">
-                    <span>💻</span>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://linkedin.com/in/yourusername" class="contact-item" target="_blank">
-                    <span>💼</span>
-                    <span>LinkedIn</span>
-                </a>
-            </div>
-        </div>
-    </section>
+            <div class="row g-3 justify-content-center">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card text-center h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3 fs-2 text-primary">📧</div>
+                            <h5 class="card-title">Email</h5>
+                            <p class="card-text">your.email@example.com</p>
+                            <a href="mailto:your.email@example.com" class="btn btn-outline-primary btn-sm">Send a
+                                message</a>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Alexander M.. All rights reserved.</p>
-        </div>
-    </footer>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card text-center h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3 fs-2 text-primary">💻</div>
+                            <h5 class="card-title">GitHub</h5>
+                            <p class="card-text">Check out my projects</p>
+                            <a href="https://github.com/yourusername" target="_blank"
+                                class="btn btn-outline-primary btn-sm">View profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card text-center h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3 fs-2 text-primary">💼</div>
+                            <h5 class="card-title">LinkedIn</h5>
+                            <p class="card-text">Connect with me</p>
+                            <a href="https://linkedin.com/in/yourusername" target="_blank"
+                                class="btn btn-outline-primary btn-sm">View profile</a>
+                        </div>
+                    </div>
+                </div>
 
-    <script src="script.js"></script>
+
+                <!-- Footer -->
+                <footer class="card-footer">
+                    <div class="container">
+                        <p>&copy; 2024 Alexander M.. All rights reserved.</p>
+                    </div>
+                </footer>
+
+                <script src="script.js"></script>
 </body>
 
 </html>

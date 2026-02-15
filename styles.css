@@ -49,3 +49,9 @@ body {
 .title {
     animation: fadeInUp 1s ease-in forwards;
 }
+
+/* About Section - Larger Container */
+/* #aboutMe {
+    padding: 80px 20px;
+    min-height: 600px;
+} */

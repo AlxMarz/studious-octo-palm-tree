@@ -46,8 +46,36 @@ body {
     to   { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes textSequence {
+    0%, 100% { opacity: 0; }
+    5%, 30% { opacity: 1; }
+    35%, 100% { opacity: 0; }
+}
+
 .title {
-    animation: fadeInUp 1s ease-in forwards;
+    position: relative;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title p {
+    animation: textSequence 9s ease-in-out infinite;
+    position: absolute;
+    margin: 0;
+}
+
+.title p:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.title p:nth-child(2) {
+    animation-delay: -3s;
+}
+
+.title p:nth-child(3) {
+    animation-delay: -6s;
 }
 
 /* About Section - Larger Container */

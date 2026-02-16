@@ -84,18 +84,21 @@
                     </div>
                 </div>
             </div>
-
             <!-- project section 2  -->
             <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                    style="background-image: url('./Assets/img/Project2.png');">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 1h-1 fw-bold">
-                            Project 2
+                <div class="card card-cover height-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="width: 100%; height: 100%; background-image: url('./Assets/img/weather.gif');">
+                    <div class="d-flex flex-column height-100 p-5 pb-3 text-white text-shadow-1 text-center"
+                        data-bs-toggle="modal" data-bs-target="#project2Modal">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            Weather App - A JavaScript Weather Dashboard
                         </h3>
+                        <p class="small mt-auto mb-0">Click to view details</p>
                     </div>
                 </div>
             </div>
+            
+            
             <!-- project section 3  -->
             <div class="col">
                 <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
@@ -231,40 +234,75 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <img src="./Assets/img/PiNas.JPG" class="img-fluid mb-4 rounded" alt="Pi NAS">
+                                <img src="./Assets/img/PiNas.JPG" class="img-fluid mb-4 rounded " alt="Pi NAS" style="width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto;">
 
-                                <h6>Project Overview</h6>
+                                <h6 class=" mt-4 text-center">Overview</h6>
                                 <p>Built a robust home NAS server using Raspberry Pi 4 with OpenMediaVault, featuring
-                                    RAID1 redundancy and Docker containerization for self-hosted services.</p>
-
-                                <h6 class="mt-4">Technologies Used</h6>
-                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                RAID1 redundancy and Docker container. 3D printed case to house the Raspberry Pi and SATA Hat.</p>
+                                <h6 class="mt-4 text-center">Technologies Used</h6>
+                                <div class="d-flex flex-wrap gap-2 mb-3 align-items-center justify-content-center">
                                     <span class="badge bg-primary">Raspberry Pi 4</span>
                                     <span class="badge bg-primary">OpenMediaVault</span>
                                     <span class="badge bg-primary">Docker</span>
-                                    <span class="badge bg-primary">Portainer</span>
-                                    <span class="badge bg-primary">RAID1</span>
+                                    <span class="badge bg-primary">RAID</span>
                                     <span class="badge bg-primary">Linux</span>
                                 </div>
 
-                                <h6>Key Features</h6>
+                                <h6 class="mt-4 text-center">Key Features</h6>
                                 <ul>
-                                    <li>3x 1TB drives in RAID1 configuration for redundancy</li>
+                                    <li>3x 1TB drives in RAID configuration for redundancy</li>
                                     <li>Network file sharing via SMB/CIFS and NFS</li>
                                     <li>Docker containerization with Portainer web UI</li>
                                     <li>Automated backups and monitoring</li>
-                                    <li>Security hardening (SSH keys, Fail2Ban, firewall)</li>
                                 </ul>
 
-                                <h6>Challenges & Solutions</h6>
-                                <p>Implemented comprehensive security measures including SSH key authentication,
-                                    Fail2Ban for intrusion prevention, and UFW firewall configuration. Optimized for
-                                    24/7 operation with proper cooling and UPS backup.</p>
+                                <h6 class="mt-4 text-center">Challenges & Solutions</h6>
+                                <p> Learning linux CLI and troubleshooting hardware compatibility issues with SATA hat fitting the case. Reduced the size of the heat sink 
+                                    to fit the housing. 
+                                    Using OMV and docker documentation to set up the NAS and containerization.
+                                </p>
                             </div>
                             <div class="modal-footer">
-                                <a href="https://github.com/yourname/pi-nas" class="btn btn-primary" target="_blank">
-                                    <i class="fab fa-github"></i> View on GitHub
-                                </a>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="project2Label">Weather App - JavaScript Weather Dashboard</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./Assets/img/weather.gif" class="img-fluid mb-4 rounded " alt="Weather App" style="width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                                <h6 class=" mt-4 text-center">Overview</h6>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, sequi amet iste beatae a excepturi fugit incidunt nisi, 
+                                    maiores eaque illum deserunt aperiam recusandae eos possimus et suscipit. Eaque, voluptates?</p>
+                                <h6 class="mt-4 text-center">Technologies Used</h6>
+                                <div class="d-flex flex-wrap gap-2 mb-3 align-items-center justify-content-center">
+                                    <span class="badge bg-primary">JavaScript</span>
+                                    <span class="badge bg-primary">HTML5</span>
+                                    <span class="badge bg-primary">CSS3</span>
+                                    <span class="badge bg-primary">API Integration</span>
+                                </div>
+
+                                <h6 class="mt-4 text-center">Key Features</h6>
+                                <ul>
+                                    <li>search any city</li>
+                                    <li>real time weather data</li>
+                                </ul>
+
+                                <h6 class="mt-4 text-center">Challenges & Solutions</h6>
+                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat at, officia sunt dolorem laborum in non provident atque voluptates
+                                     quod necessitatibus facere soluta tempora expedita omnis quidem adipisci vitae possimus?
+                                </p>
+                            </div>
+                            <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             </div>
                         </div>

@@ -79,7 +79,10 @@ body {
 }
 
 /* About Section - Larger Container */
-/* #aboutMe {
-    padding: 80px 20px;
+#aboutMe {
+    padding: 80px 50px;
     min-height: 600px;
-} */
+    background-color: #e5e8eb;
+    margin: 60px 0;
+    border-radius: 10px;
+}

@@ -79,6 +79,17 @@ body {
 }
 
 /* About Section - Larger Container */
+
+/* {
+    margin: -24px -12px 0px;
+    padding: 48
+} */
+
+#projectCards{
+    margin: 0px 335px;
+    padding: 48px 24px;
+}
+
 #aboutMe {
     padding: 80px 50px;
     min-height: 600px;

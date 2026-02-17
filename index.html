@@ -155,18 +155,22 @@
     <section class="container-fluid px-4 py-5" id="skills">
     <h2 class="section-title text-center mb-4">Skills & Expertise</h2>
     
+
+    
     <!-- Filter Buttons -->
-    <div class="d-flex justify-content-center mb-4">
+    <div class=" d-flex justify-content-center mb-4">
         <div class="btn-group" role="group">
             <button class="btn btn-outline-success primary" onclick="filterSkillsBadge('all')">All</button>
             <button class="btn btn-outline-success" onclick="filterSkillsBadge('technical')">Technical</button>
             <button class="btn btn-outline-secondary" onclick="filterSkillsBadge('soft')">Soft Skills</button>
         </div>
     </div>
-    
+
+
+<div class="row">
     <!-- Technical Skills -->
-    <div class="mb-4 skill-category" data-category="technical">
-        <h4 class="mb-3"><i class="fas fa-code text-success"></i> Technical Skills</h4>
+    <div class="col mx-auto mb-4 skill-category" data-category="technical">
+        <!-- <h4 class="mb-3"><i class="fas fa-code text-success"></i> Technical Skills</h4> -->
         <div class="d-flex flex-wrap gap-2">
             <span class="badge bg-success fs-6 px-3 py-2">Linux Administration</span>
             <span class="badge bg-success fs-6 px-3 py-2">Docker</span>
@@ -182,11 +186,11 @@
             <span class="badge bg-success fs-6 px-3 py-2">linux</span>
         </div>
     </div>
-
+    
     <!-- Soft Skills -->
-    <div class="skill-category" data-category="soft">
-        <h4 class="mb-3"><i class="fas fa-users text-secondary"></i> Soft Skills</h4>
-        <div class="d-flex flex-wrap gap-2">
+    <div class=" col mx-auto skill-category" data-category="soft">
+        <!-- <h4 class="mb-3"><i class="fas fa-users text-secondary"></i> Soft Skills</h4> -->
+        <div class=" d-flex flex-wrap gap-2">
             <span class="badge bg-secondary fs-6 px-3 py-2">Problem Solving</span>
             <span class="badge bg-secondary fs-6 px-3 py-2">Self-Learning</span>
             <span class="badge bg-secondary fs-6 px-3 py-2">Communication</span>
@@ -196,7 +200,9 @@
             <span class="badge bg-secondary fs-6 px-3 py-2">Adaptability</span>
             <span class="badge bg-secondary fs-6 px-3 py-2">Critical Thinking</span>
         </div>
+    </div> 
     </div>
+
 </section>
 
 
@@ -278,10 +284,7 @@
                                 <p> Built a robust home NAS server using Raspberry Pi 4 with OpenMediaVault, featuring
                                     RAID1 redundancy and Docker container. 3D printed case to house the Raspberry Pi and
                                     SATA Hat.
-                                    Learning linux CLI and troubleshooting hardware compatibility issues with SATA hat
-                                    fitting the case. Reduced the size of the heat sink
-                                    to fit the housing.
-                                   
+                                    Learned linux CLI and troubleshooting hardware compatibility issues.
                                 </p>
                             </div>
                             <div class="modal-footer">
@@ -353,15 +356,17 @@
                                     <span class="badge bg-success">Hardware replacement </span>
                                     <span class="badge bg-success">Benchmarking</span>
                                     <span class="badge bg-success">Performance Tuning</span>
-                                    <span class="badge bg-success">troublessucceesshooting</span>
+                                    <span class="badge bg-success">troubleshooting</span>
                                     <span class="badge bg-success">Windows 10/11</span>
                                     <span class="badge bg-success">linux</span>
                                 </div>
 
                                 <h6 class="mt-4 text-center">Key Features</h6>
                                 <ul>
-                                    <li>GPU:4070 TI Super</li>
-                                    <li>real time weather data</li>
+                                    <li>Nvdia 4070 TI Super</li>
+                                    <li>AMD Ryzen 9 5900X 12-Core Processor</li>
+                                    <li>Corsair 32GB DDR4 RAM</li>
+                                    <li>AIO Water Cooling System</li>
                                 </ul>
 
                                 <h6 class="mt-4 text-center">Challenges & Solutions</h6>

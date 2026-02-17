@@ -89,6 +89,12 @@ body {
     margin: 0px 335px;
     padding: 48px 24px;
 } */
+ 
+ /* #nameTittle {
+    border: 2px solid #1f2937;
+    backdrop-filter: blur(0);
+filter: blur(2x);
+ } */
 
 #aboutMe {
     padding: 80px 50px;

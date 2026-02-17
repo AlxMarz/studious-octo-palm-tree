@@ -52,7 +52,7 @@
     <!-- Hero Section -->
     <section class="jumbotron text-center text-white d-flex flex-column justify-content-center"
         style="min-height:100vh; background-image:linear-gradient(to bottom, #6bd370d6, #306f33d6,#0a0a0a); background-size: cover; background-position: center;">
-        <container class="container">
+        <container class="container" id="nameTittle">
             <div class="jumbotron-heading">
                 <h1 class="display-1 text-center">Hi, I'm <strong>Alexander M.</strong></h1>
 
@@ -70,9 +70,7 @@
     <!-- Projects Section -->
     <section class="container text-center px-4 py-5" id="projects">
         <h2 class="section-title text-center">My Projects</h2>
-
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-            
             <!-- Project 1 -->
             <div class="col">
                 <div class="card card-cover height-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
@@ -114,13 +112,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
 
 
     <!-- About Section -->
@@ -167,43 +158,43 @@
     <!-- Filter Buttons -->
     <div class="d-flex justify-content-center mb-4">
         <div class="btn-group" role="group">
-            <button class="btn btn-outline-primary active" onclick="filterSkillsBadge('all')">All</button>
-            <button class="btn btn-outline-primary" onclick="filterSkillsBadge('technical')">Technical</button>
-            <button class="btn btn-outline-primary" onclick="filterSkillsBadge('soft')">Soft Skills</button>
+            <button class="btn btn-outline-success primary" onclick="filterSkillsBadge('all')">All</button>
+            <button class="btn btn-outline-success" onclick="filterSkillsBadge('technical')">Technical</button>
+            <button class="btn btn-outline-secondary" onclick="filterSkillsBadge('soft')">Soft Skills</button>
         </div>
     </div>
     
     <!-- Technical Skills -->
     <div class="mb-4 skill-category" data-category="technical">
-        <h4 class="mb-3"><i class="fas fa-code text-primary"></i> Technical Skills</h4>
+        <h4 class="mb-3"><i class="fas fa-code text-success"></i> Technical Skills</h4>
         <div class="d-flex flex-wrap gap-2">
-            <span class="badge bg-primary fs-6 px-3 py-2">Linux Administration</span>
-            <span class="badge bg-primary fs-6 px-3 py-2">Docker</span>
-            <span class="badge bg-primary fs-6 px-3 py-2">OpenMediaVault</span>
-            <span class="badge bg-primary fs-6 px-3 py-2">HTML/CSS</span>
-            <span class="badge bg-primary fs-6 px-3 py-2">JavaScript</span>
-            <span class="badge bg-primary fs-6 px-3 py-2">Bootstrap</span>
-            <span class="badge bg-primary fs-6 px-3 py-2">Git/GitHub</span>
-            <span class="badge bg-primary fs-6 px-3 py-2">RAID Storage</span>
-            <span class="badge bg-primary fs-6 px-3 py-2">Network Security</span>
-            <span class="badge bg-primary fs-6 px-3 py-2">SSH</span>
-            <span class="badge bg-primary fs-6 px-3 py-2">Windows 10/11</span>
-            <span class="badge bg-primary fs-6 px-3 py-2">linux</span>
+            <span class="badge bg-success fs-6 px-3 py-2">Linux Administration</span>
+            <span class="badge bg-success fs-6 px-3 py-2">Docker</span>
+            <span class="badge bg-success fs-6 px-3 py-2">OpenMediaVault</span>
+            <span class="badge bg-success fs-6 px-3 py-2">HTML/CSS</span>
+            <span class="badge bg-success fs-6 px-3 py-2">JavaScript</span>
+            <span class="badge bg-success fs-6 px-3 py-2">Bootstrap</span>
+            <span class="badge bg-success fs-6 px-3 py-2">Git/GitHub</span>
+            <span class="badge bg-success fs-6 px-3 py-2">RAID Storage</span>
+            <span class="badge bg-success fs-6 px-3 py-2">Network Security</span>
+            <span class="badge bg-success fs-6 px-3 py-2">SSH</span>
+            <span class="badge bg-success fs-6 px-3 py-2">Windows 10/11</span>
+            <span class="badge bg-success fs-6 px-3 py-2">linux</span>
         </div>
     </div>
-    
+
     <!-- Soft Skills -->
     <div class="skill-category" data-category="soft">
-        <h4 class="mb-3"><i class="fas fa-users text-success"></i> Soft Skills</h4>
+        <h4 class="mb-3"><i class="fas fa-users text-secondary"></i> Soft Skills</h4>
         <div class="d-flex flex-wrap gap-2">
-            <span class="badge bg-success fs-6 px-3 py-2">Problem Solving</span>
-            <span class="badge bg-success fs-6 px-3 py-2">Self-Learning</span>
-            <span class="badge bg-success fs-6 px-3 py-2">Communication</span>
-            <span class="badge bg-success fs-6 px-3 py-2">Team Collaboration</span>
-            <span class="badge bg-success fs-6 px-3 py-2">Time Management</span>
-            <span class="badge bg-success fs-6 px-3 py-2">Attention to Detail</span>
-            <span class="badge bg-success fs-6 px-3 py-2">Adaptability</span>
-            <span class="badge bg-success fs-6 px-3 py-2">Critical Thinking</span>
+            <span class="badge bg-secondary fs-6 px-3 py-2">Problem Solving</span>
+            <span class="badge bg-secondary fs-6 px-3 py-2">Self-Learning</span>
+            <span class="badge bg-secondary fs-6 px-3 py-2">Communication</span>
+            <span class="badge bg-secondary fs-6 px-3 py-2">Team Collaboration</span>
+            <span class="badge bg-secondary fs-6 px-3 py-2">Time Management</span>
+            <span class="badge bg-secondary fs-6 px-3 py-2">Attention to Detail</span>
+            <span class="badge bg-secondary fs-6 px-3 py-2">Adaptability</span>
+            <span class="badge bg-secondary fs-6 px-3 py-2">Critical Thinking</span>
         </div>
     </div>
 </section>
@@ -266,18 +257,13 @@
                             <div class="modal-body">
                                 <img src="./Assets/img/PiNas.JPG" class="img-fluid mb-4 rounded shadow-lg" alt="Pi NAS"
                                     style="width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-
-                                <h6 class=" mt-4 text-center">Overview</h6>
-                                <p>Built a robust home NAS server using Raspberry Pi 4 with OpenMediaVault, featuring
-                                    RAID1 redundancy and Docker container. 3D printed case to house the Raspberry Pi and
-                                    SATA Hat.</p>
                                 <h6 class="mt-4 text-center">Technologies Used</h6>
                                 <div class="d-flex flex-wrap gap-2 mb-3 align-items-center justify-content-center">
-                                    <span class="badge bg-primary">Raspberry Pi 4</span>
-                                    <span class="badge bg-primary">OpenMediaVault</span>
-                                    <span class="badge bg-primary">Docker</span>
-                                    <span class="badge bg-primary">RAID</span>
-                                    <span class="badge bg-primary">Linux</span>
+                                    <span class="badge bg-success">Raspberry Pi 4</span>
+                                    <span class="badge bg-success">OpenMediaVault</span>
+                                    <span class="badge bg-success">Docker</span>
+                                    <span class="badge bg-success">RAID</span>
+                                    <span class="badge bg-success">Linux</span>
                                 </div>
 
                                 <h6 class="mt-4 text-center">Key Features</h6>
@@ -289,10 +275,13 @@
                                 </ul>
 
                                 <h6 class="mt-4 text-center">Challenges & Solutions</h6>
-                                <p> Learning linux CLI and troubleshooting hardware compatibility issues with SATA hat
+                                <p> Built a robust home NAS server using Raspberry Pi 4 with OpenMediaVault, featuring
+                                    RAID1 redundancy and Docker container. 3D printed case to house the Raspberry Pi and
+                                    SATA Hat.
+                                    Learning linux CLI and troubleshooting hardware compatibility issues with SATA hat
                                     fitting the case. Reduced the size of the heat sink
                                     to fit the housing.
-                                    Using OMV and docker documentation to set up the NAS and containerization.
+                                   
                                 </p>
                             </div>
                             <div class="modal-footer">
@@ -317,30 +306,24 @@
                                 <img src="./Assets/img/weather.gif" class="img-fluid mb-4 rounded shadow-lg"
                                     alt="Weather App"
                                     style="width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-                                <h6 class=" mt-4 text-center">Overview</h6>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, sequi amet iste
-                                    beatae a excepturi fugit incidunt nisi,
-                                    maiores eaque illum deserunt aperiam recusandae eos possimus et suscipit. Eaque,
-                                    voluptates?</p>
                                 <h6 class="mt-4 text-center">Technologies Used</h6>
                                 <div class="d-flex flex-wrap gap-2 mb-3 align-items-center justify-content-center">
-                                    <span class="badge bg-primary">JavaScript</span>
-                                    <span class="badge bg-primary">HTML5</span>
-                                    <span class="badge bg-primary">CSS3</span>
-                                    <span class="badge bg-primary">API Integration</span>
+                                    <span class="badge bg-successsucess">JavaScript</span>
+                                    <span class="badge bg-success">HTML5</span>
+                                    <span class="badge bg-success">CSS3</span>
+                                    <span class="badge bg-success">API Integration</span>
                                 </div>
 
                                 <h6 class="mt-4 text-center">Key Features</h6>
                                 <ul>
                                     <li>Search feature of any city</li>
-                                    <li>real time weather data</li>
+                                    <li>Real time weather data</li>
                                 </ul>
 
                                 <h6 class="mt-4 text-center">Challenges & Solutions</h6>
-                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat at, officia sunt
-                                    dolorem laborum in non provident atque voluptates
-                                    quod necessitatibus facere soluta tempora expedita omnis quidem adipisci vitae
-                                    possimus?
+                                <p> A project built with JavaScript, HTML5, and CSS3 created during my Boot Camp. Revised the UI after practice with front end design principles.
+                                    First interactions with JS and API integration. The first time i was able to build a working application with real time data.
+                                    Reading documentation and watching tutorials to understand JavaScript, and API integration.
                                 </p>
                             </div>
                             <div class="modal-footer background-dark">
@@ -365,18 +348,14 @@
                                 <img src="./Assets/img/work station.JPG" class="img-fluid mb-4 rounded shadow-lg"
                                     alt="PC build"
                                     style="width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-                                <h6 class=" mt-4 text-center">Overview</h6>
-                                <p>From picking out the parks to replacing them when they break, this project involved building 
-                                    a computer from the ground up and maintaining it over 6 years. 
-                                </p>
                                 <h6 class="mt-4 text-center">Technologies Used</h6>
                                 <div class="d-flex flex-wrap gap-2 mb-3 align-items-center justify-content-center">
-                                    <span class="badge bg-primary">Hardware replacement </span>
-                                    <span class="badge bg-primary">Benchmarking</span>
-                                    <span class="badge bg-primary">Performance Tuning</span>
-                                    <span class="badge bg-primary">troubleshooting</span>
-                                    <span class="badge bg-primary">Windows 10/11</span>
-                                    <span class="badge bg-primary">linux</span>
+                                    <span class="badge bg-success">Hardware replacement </span>
+                                    <span class="badge bg-success">Benchmarking</span>
+                                    <span class="badge bg-success">Performance Tuning</span>
+                                    <span class="badge bg-success">troublessucceesshooting</span>
+                                    <span class="badge bg-success">Windows 10/11</span>
+                                    <span class="badge bg-success">linux</span>
                                 </div>
 
                                 <h6 class="mt-4 text-center">Key Features</h6>
@@ -386,11 +365,8 @@
                                 </ul>
 
                                 <h6 class="mt-4 text-center">Challenges & Solutions</h6>
-                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat at, officia sunt
-                                    dolorem laborum in non provident atque voluptates
-                                    quod necessitatibus facere soluta tempora expedita omnis quidem adipisci vitae
-                                    possimus?
-                                </p>
+                                    <p>From picking out the parks to replacing them when they break, this project involved building 
+                                    a computer from the ground up and maintaining it over 6 years. I have replaced the GPU, RAM, CPU and cooling system, and have used troubleshooting skills to keep the system running smoothly.</p>
                             </div>
                             <div class="modal-footer background-dark">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

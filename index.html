@@ -70,7 +70,9 @@
     <!-- Projects Section -->
     <section class="container text-center px-4 py-5" id="projects">
         <h2 class="section-title text-center">My Projects</h2>
+
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            
             <!-- Project 1 -->
             <div class="col">
                 <div class="card card-cover height-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
@@ -97,16 +99,15 @@
                     </div>
                 </div>
             </div>
-
-
-            <!-- project section 3  -->
             <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                    style="background-image: url('./Assets/img/Project3.png');">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 1h-1 fw-bold">
-                            Project 3
+                <div class="card card-cover height-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="width: 100%; height: 100%; background-image: url('./Assets/img/Project3.png');">
+                    <div class="d-flex flex-column height-100 p-5 pb-3 text-white text-shadow-1 text-center"
+                        data-bs-toggle="modal" data-bs-target="#project3Modal">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            Personal PC build - A custom built PC 
                         </h3>
+                        <p class="small mt-auto mb-0">Click to view details</p>
                     </div>
                 </div>
             </div>
@@ -347,6 +348,55 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- !-- modal for project 3 --> 
+                <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="project3Label">Weather App - JavaScript Weather Dashboard
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./Assets/img/weather.gif" class="img-fluid mb-4 rounded shadow-lg"
+                                    alt="Weather App"
+                                    style="width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                                <h6 class=" mt-4 text-center">Overview</h6>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, sequi amet iste
+                                    beatae a excepturi fugit incidunt nisi,
+                                    maiores eaque illum deserunt aperiam recusandae eos possimus et suscipit. Eaque,
+                                    voluptates?</p>
+                                <h6 class="mt-4 text-center">Technologies Used</h6>
+                                <div class="d-flex flex-wrap gap-2 mb-3 align-items-center justify-content-center">
+                                    <span class="badge bg-primary">JavaScript</span>
+                                    <span class="badge bg-primary">HTML5</span>
+                                    <span class="badge bg-primary">CSS3</span>
+                                    <span class="badge bg-primary">API Integration</span>
+                                </div>
+
+                                <h6 class="mt-4 text-center">Key Features</h6>
+                                <ul>
+                                    <li>Search feature of any city</li>
+                                    <li>real time weather data</li>
+                                </ul>
+
+                                <h6 class="mt-4 text-center">Challenges & Solutions</h6>
+                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat at, officia sunt
+                                    dolorem laborum in non provident atque voluptates
+                                    quod necessitatibus facere soluta tempora expedita omnis quidem adipisci vitae
+                                    possimus?
+                                </p>
+                            </div>
+                            <div class="modal-footer background-dark">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 </section>
 
                 <!-- Footer -->

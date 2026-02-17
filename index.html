@@ -41,7 +41,7 @@
                         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#aboutMe">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="mailto:alexander.example@mail.com">Contact</a>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -159,34 +159,58 @@
 
 
     <!-- skills tags section -->
-    <section id="skills" class="container-fluid py-5">
-        <!-- tags to skills -->
-        <!-- skills  -->
-        <div class="skills">
-            <h3 class="text-center">Skills</h3>
-            <div class="text-center justify-content-center">
-                <span class="badge text-bg-dark">HTML</span>
-                <span class="badge text-bg-dark">CSS</span>
-                <span class="badge text-bg-dark">JavaScript</span>
-                <span class="badge text-bg-dark">Responsive Design</span>
-                <span class="badge text-bg-dark">Git</span>
-            </div>
+    <section class="container-fluid px-4 py-5" id="skills">
+    <h2 class="section-title text-center mb-4">Skills & Expertise</h2>
+    
+    <!-- Filter Buttons -->
+    <div class="d-flex justify-content-center mb-4">
+        <div class="btn-group" role="group">
+            <button class="btn btn-outline-primary active" onclick="filterSkillsBadge('all')">All</button>
+            <button class="btn btn-outline-primary" onclick="filterSkillsBadge('technical')">Technical</button>
+            <button class="btn btn-outline-primary" onclick="filterSkillsBadge('soft')">Soft Skills</button>
         </div>
-        <ul>
-            <li>CompTIA A+ Certified</li>
-            <li>Currently preparing for CompTIA Network+</li>
-            <li>Strong problem-solving skills</li>
-            <li>Excellent customer service skills</li>
-        </ul>
+    </div>
+    
+    <!-- Technical Skills -->
+    <div class="mb-4 skill-category" data-category="technical">
+        <h4 class="mb-3"><i class="fas fa-code text-primary"></i> Technical Skills</h4>
+        <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-primary fs-6 px-3 py-2">Linux Administration</span>
+            <span class="badge bg-primary fs-6 px-3 py-2">Docker</span>
+            <span class="badge bg-primary fs-6 px-3 py-2">OpenMediaVault</span>
+            <span class="badge bg-primary fs-6 px-3 py-2">HTML/CSS</span>
+            <span class="badge bg-primary fs-6 px-3 py-2">JavaScript</span>
+            <span class="badge bg-primary fs-6 px-3 py-2">Bootstrap</span>
+            <span class="badge bg-primary fs-6 px-3 py-2">Git/GitHub</span>
+            <span class="badge bg-primary fs-6 px-3 py-2">RAID Storage</span>
+            <span class="badge bg-primary fs-6 px-3 py-2">Network Security</span>
+            <span class="badge bg-primary fs-6 px-3 py-2">SSH</span>
+            <span class="badge bg-primary fs-6 px-3 py-2">Firewall (UFW)</span>
+            <span class="badge bg-primary fs-6 px-3 py-2">Fail2Ban</span>
         </div>
+    </div>
+    
+    <!-- Soft Skills -->
+    <div class="skill-category" data-category="soft">
+        <h4 class="mb-3"><i class="fas fa-users text-success"></i> Soft Skills</h4>
+        <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-success fs-6 px-3 py-2">Problem Solving</span>
+            <span class="badge bg-success fs-6 px-3 py-2">Self-Learning</span>
+            <span class="badge bg-success fs-6 px-3 py-2">Communication</span>
+            <span class="badge bg-success fs-6 px-3 py-2">Team Collaboration</span>
+            <span class="badge bg-success fs-6 px-3 py-2">Time Management</span>
+            <span class="badge bg-success fs-6 px-3 py-2">Attention to Detail</span>
+            <span class="badge bg-success fs-6 px-3 py-2">Adaptability</span>
+            <span class="badge bg-success fs-6 px-3 py-2">Critical Thinking</span>
         </div>
-    </section>
+    </div>
+</section>
 
 
     <!-- Contact Section -->
-    <section class="container-fluid py-6 bg-dark text-white" id="contact">
+    <section class="container-fluid py-6 " id="contact">
+        <h2 class="section-title text-center">Contact me</h2>
         <div class="container">
-            <h2 class="mb-4 text-center">Get In Touch</h2>
             <div class="row g-3 justify-content-center">
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="card text-center h-100 border-0 shadow-sm">
@@ -317,7 +341,7 @@
                                     possimus?
                                 </p>
                             </div>
-                            <div class="modal-footer">
+                            <div class="modal-footer background-dark">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             </div>
                         </div>
@@ -326,7 +350,7 @@
                 </section>
 
                 <!-- Footer -->
-                <footer class="card-footer">
+                <footer class="card-footer ">
                     <div class="container">
                         <p>&copy; 2024 Alexander M.. All rights reserved.</p>
                     </div>

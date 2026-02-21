@@ -1,6 +1,11 @@
 const cara1 = document.querySelector('#carousel1')
+const cara2 = document.querySelector('#carousel2')
 
 const carousel = new bootstrap.Carousel(cara1, {
+  interval: 2000,
+  touch: false
+})
+const carousel2 = new bootstrap.Carousel(cara2, {
   interval: 2000,
   touch: false
 })

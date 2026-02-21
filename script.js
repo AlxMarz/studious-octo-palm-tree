@@ -1,5 +1,9 @@
 const cara1 = document.querySelector('#carousel1')
 const cara2 = document.querySelector('#carousel2')
+// in script.js
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.title').classList.add('visible');
+});
 
 const carousel = new bootstrap.Carousel(cara1, {
   interval: 2000,
@@ -10,10 +14,6 @@ const carousel2 = new bootstrap.Carousel(cara2, {
   touch: false
 })
 
-// in script.js
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.title').classList.add('visible');
-});
 
 
 function filterSkillsBadge(category) {

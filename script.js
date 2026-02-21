@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const carousel = new bootstrap.Carousel(carousel1, {
-    interval: 2000,
+    interval: 3000,
     touch: true
 })
 const carousel3 = new bootstrap.Carousel(carousel2, {
-    interval: 2000,
+    interval: 4000,
     touch: true
 })
 

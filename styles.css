@@ -19,14 +19,17 @@ html {
 }
 
 body {
-    font-family: Rubik,Roboto mono, Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: Roboto, Rubik, Roboto mono, -apple-system, BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
 }
 
+
 .nav-item {
     font-size: x-large;
 }
+
+
 
 .title {
     opacity: 0;
@@ -90,11 +93,14 @@ body {
     padding: 48px 24px;
 } */
 
- /* #nameTittle {
-    border: 2px solid #1f2937;
-    backdrop-filter: blur(0);
-filter: blur(2x);
- } */
+  #nameTittle {
+    background: white;
+    text-shadow: #0e0f10;
+    backdrop-filter: blur(0); 
+    box-shadow: #b1abab 1px 8px 40px 10px;
+     border-radius: 20px;
+    }
+    
 
 ÷
 #skills {

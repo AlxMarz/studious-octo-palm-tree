@@ -3,6 +3,8 @@ const carousel2 = document.querySelector('#cara2')
 // in script.js
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.title').classList.add('visible');
+    document.querySelector('.circle-container').classList.add('visible');
+
 });
 
 const carousel = new bootstrap.Carousel(carousel1, {

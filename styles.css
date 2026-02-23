@@ -28,15 +28,23 @@ body {
     font-size: x-large;
 }
 
-.circle-container {
-  width: 200px;                      /* Set a fixed size for the container */
-  height: 200px;                     /* Must match width for a perfect circle */
-  border-radius: 50%;                /* Shapes the container into a circle */
-  overflow: hidden;                  /* Hides parts of the image outside the circle */
-  background-image: url('Assets/img/Alx.JPG'); /* Use the image as a background */
-  background-size: cover;            /* Scales and crops the background image to fill the container */
-  background-position: center;       /* Centers the image within the container */
 
+.circle-container {
+    width: 350px;
+    /* Set a fixed size for the container */
+    height: 350px;
+    /* Must match width for a perfect circle */
+    border-radius: 50%;
+    /* Shapes the container into a circle */
+    overflow: hidden;
+    /* Hides parts of the image outside the circle */
+    background-image: url('Assets/img/Alx.JPG');
+    /* Use the image as a background */
+    background-size: cover;
+    /* Scales and crops the background image to fill the container */
+    background-position: center;
+    /* Centers the image within the container */
+    border: #fcfcfc 2px solid;
 }
 
 .title {
@@ -124,7 +132,7 @@ body {
     background: white;
     text-shadow: #0e0f10;
     backdrop-filter: blur(0);
-    box-shadow: #b1abab 1px 8px 40px 10px;
+    box-shadow: #b1abab 1px 8px 30px 5px;
     border-radius: 20px;
 }
 

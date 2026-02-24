@@ -177,10 +177,6 @@ body {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3) !important;
 }
 
-
-
-
-
 #contact {
     padding: 60px 50px;
     min-height: 100px;
@@ -188,8 +184,6 @@ body {
     border-radius: 20px;
 
 }
-
-
 
 .carousel-img {
     height: 600px;

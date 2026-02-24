@@ -188,3 +188,22 @@ body {
     border-radius: 20px;
 
 }
+
+
+
+.carousel-img {
+    height: 600px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .carousel-img {
+        height: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-img {
+        height: 600px;
+    }
+}

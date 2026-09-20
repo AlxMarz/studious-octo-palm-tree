@@ -17,6 +17,13 @@ html {
     scroll-behavior: smooth;
 }
 
+#aboutMe,
+#projects,
+#skills,
+#contact {
+    scroll-margin-top: 4.5rem;
+}
+
 body {
     font-family: Roboto, Rubik, Roboto mono, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
@@ -185,19 +192,53 @@ body {
 
 }
 
+.about-photo {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain;
+    object-position: center;
+    background-color: #f8f9fa;
+}
+
 .carousel-img {
     height: 600px;
     object-fit: cover;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 991.98px) {
+    .circle-container {
+        width: min(70vw, 280px);
+        height: min(70vw, 280px);
+    }
+
+    #aboutMe .row {
+        --bs-gutter-x: 0.75rem;
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+
     .carousel-img {
-        height: 500px;
+        height: auto;
+        max-height: 70vh;
+        object-fit: contain;
+    }
+
+    #contact {
+        padding: 40px 16px;
+        margin: 24px 0;
     }
 }
 
 @media (min-width: 992px) {
+    .about-photo {
+        height: 600px;
+        max-height: none;
+        object-fit: cover;
+    }
+
     .carousel-img {
         height: 600px;
+        object-fit: cover;
     }
 }

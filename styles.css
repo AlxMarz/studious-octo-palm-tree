@@ -1,17 +1,6 @@
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #8b5cf6;
     --text-dark: #1f2937;
-    --text-light: #6b7280;
-    --bg-light: #f9fafb;
-    --white: #fefae0;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
-
-/* .collapse.navbar-collapse {
-    justify-content: center;
-} */
 
 html {
     scroll-behavior: smooth;
@@ -25,111 +14,65 @@ html {
 }
 
 body {
-    font-family: Roboto, Rubik, Roboto mono, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: Roboto, Rubik, "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
 }
-
 
 .nav-item {
     font-size: x-large;
 }
 
+.hero {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    padding-block: clamp(2rem, 6vw, 5rem);
+    background: linear-gradient(to bottom, #588157, #344e41);
+}
+
+.hero-heading {
+    font-size: clamp(2rem, 1.2rem + 3.5vw, 4.5rem);
+    line-height: 1.1;
+}
 
 .circle-container {
     width: 350px;
-    /* Set a fixed size for the container */
-    height: 350px;
-    /* Must match width for a perfect circle */
-    border-radius: 50%;
-    /* Shapes the container into a circle */
+    aspect-ratio: 1;
     overflow: hidden;
-    /* Hides parts of the image outside the circle */
-    background-image: url('Assets/img/Alx.JPG');
-    /* Use the image as a background */
-    background-size: cover;
-    /* Scales and crops the background image to fill the container */
-    background-position: center;
-    /* Centers the image within the container */
-    border: #fcfcfc 2px solid;
-}
-
-#nameTittle {
-    transform: translateX(0);
-}
-
-@media (min-width: 992px) {
-    #nameTittle {
-        transform: translateX(-30px);
-    }
-}
-
-@media (min-width: 1200px) {
-    #nameTittle {
-        transform: translateX(-60px);
-    }
+    border: 2px solid #fcfcfc;
+    border-radius: 50%;
+    background: url("Assets/img/Alx.JPG") center / cover;
 }
 
 .title {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 1.5em;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    container-type: inline-size;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity .6s ease-in,
-        transform .6s ease-in;
+    transition: opacity 0.6s ease-in, transform 0.6s ease-in;
 }
 
-/* add this class with JS when the page is ready */
 .title.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes textSequence {
-
-    0%,
-    100% {
-        opacity: 0;
-    }
-
-    5%,
-    30% {
-        opacity: 1;
-    }
-
-    35%,
-    100% {
-        opacity: 0;
-    }
-}
-
-.title {
-    position: relative;
-    height: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    overflow: hidden; 
-}
-
 .title p {
-     animation: textSequence 9s ease-in-out infinite;
     position: absolute;
+    left: 50%;
     margin: 0;
-    left: 0;
-    white-space: nowrap;      /* forces single line, no wrap */
-    font-size: clamp(1rem, 4vw, 2.5rem);
+    transform: translateX(-50%);
+    animation: textSequence 9s ease-in-out infinite;
+    white-space: nowrap;
+    font-size: clamp(0.875rem, 6cqi, 2rem);
 }
 
 .title p:nth-child(1) {
@@ -144,25 +87,22 @@ body {
     animation-delay: -6s;
 }
 
-/* About Section - Larger Container */
+@keyframes textSequence {
 
-/* {
-    margin: -24px -12px 0px;
-    padding: 48
-} */
+    0%,
+    100% {
+        opacity: 0;
+    }
 
-/* #projectCards{
-    margin: 0px 335px;
-    padding: 48px 24px;
-} */
+    5%,
+    30% {
+        opacity: 1;
+    }
 
-/* #nameTittle {
-    background: white;
-    text-shadow: #0e0f10;
-    backdrop-filter: blur(0);
-    box-shadow: #b1abab 1px 8px 30px 5px;
-    border-radius: 20px;
-} */
+    35% {
+        opacity: 0;
+    }
+}
 
 .full-height-section {
     min-height: 100vh;
@@ -171,41 +111,28 @@ body {
     justify-content: center;
 }
 
-
-÷ #skills {
-    padding: 60px 50px;
-    min-height: 100px;
-    background-color: #ffffff;
-    margin: 60px 0;
-    border-radius: 20px;
-
-}
-
 .card-cover {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 350px;
     position: relative;
+    min-height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Dark overlay for text readability */
 .card-cover::before {
-    content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
     border-radius: inherit;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+    content: "";
 }
 
-/* Ensure content is above overlay */
 .card-cover>div {
     position: relative;
     z-index: 2;
 }
 
-/* Hover effect */
 .card-cover:hover {
     cursor: pointer;
     transform: translateY(-8px);
@@ -213,48 +140,35 @@ body {
 }
 
 #contact {
-    padding: 60px 50px;
     min-height: 100px;
     margin: 60px 0;
+    padding: 60px 50px;
     border-radius: 20px;
-
 }
 
 .about-photo {
     width: 100%;
     height: auto;
     max-height: 70vh;
+    background-color: #f8f9fa;
     object-fit: contain;
     object-position: center;
-    background-color: #f8f9fa;
-}
-
-.carousel-img {
-    height: 600px;
-    object-fit: cover;
 }
 
 @media (max-width: 991.98px) {
     .circle-container {
         width: min(70vw, 280px);
-        height: min(70vw, 280px);
     }
 
     #aboutMe .row {
         --bs-gutter-x: 0.75rem;
-        padding-left: 0.75rem !important;
         padding-right: 0.75rem !important;
-    }
-
-    .carousel-img {
-        height: auto;
-        max-height: 70vh;
-        object-fit: contain;
+        padding-left: 0.75rem !important;
     }
 
     #contact {
-        padding: 40px 16px;
         margin: 24px 0;
+        padding: 40px 16px;
     }
 }
 
@@ -262,11 +176,6 @@ body {
     .about-photo {
         height: 600px;
         max-height: none;
-        object-fit: cover;
-    }
-
-    .carousel-img {
-        height: 600px;
         object-fit: cover;
     }
 }

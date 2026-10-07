@@ -1,41 +1,20 @@
-const carousel1 = document.querySelector('#cara1')
-const carousel2 = document.querySelector('#cara2')
-// in script.js
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.title').classList.add('visible');
-    document.querySelector('#circleContainer').classList.add('visible');
+document.querySelector('.title')?.classList.add('visible');
 
-
+document.querySelectorAll('.skill-filter').forEach((button) => {
+    button.addEventListener('click', () => filterSkills(button));
 });
 
-const carousel = new bootstrap.Carousel(carousel1, {
-    interval: 19000,
-    touch: true
-})
-const carousel3 = new bootstrap.Carousel(carousel2, {
-    interval: 19000,
-    touch: true
-})
+function filterSkills(selectedButton) {
+    const selectedCategory = selectedButton.dataset.skillFilter;
 
+    document.querySelectorAll('.skill-filter').forEach((button) => {
+        const isSelected = button === selectedButton;
+        button.classList.toggle('active', isSelected);
+        button.setAttribute('aria-pressed', String(isSelected));
+    });
 
-
-
-function filterSkillsBadge(category) {
-    const categories = document.querySelectorAll('.skill-category');
-    const buttons = document.querySelectorAll('.btn-group button');
-
-    // Update active button
-    buttons.forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
-
-    // Filter categories
-    categories.forEach(cat => {
-        if (category === 'all') {
-            cat.style.display = 'block';
-        } else if (cat.getAttribute('data-category') === category) {
-            cat.style.display = 'block';
-        } else {
-            cat.style.display = 'none';
-        }
+    document.querySelectorAll('.skill-category').forEach((category) => {
+        category.hidden = selectedCategory !== 'all'
+            && category.dataset.category !== selectedCategory;
     });
 }

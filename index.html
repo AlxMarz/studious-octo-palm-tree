@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio of IT professional ">
+    <meta name="description" content="Portfolio of IT professional">
     <title>Alexander M. - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -19,8 +19,8 @@
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous" defer></script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
+        defer></script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
@@ -50,28 +50,37 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
 
-    <section class="jumbotron text-center text-white d-flex flex-column justify-content-center fw-bold"
-        style="min-height:100vh; background-image:linear-gradient(to bottom, #6bd370d6, #306f33d6,#0a0a0a); background-size: cover; background-position: center;">
-        <div class="circle-container d-flex mx-auto mb-4" id="circleContainer"></div>
-        <container class="container p-2" id="nameTittle">
-            <div class="jumbotron-heading">
-                <h1 class="display-1 text-center fw-medium p-3">Hello, my name is <strong>Alexander.</strong></h1>
-                <div class="title p-3">
-                    <!-- text animation  -->
-                    <p class="display-5 lead mb-1 text-shadow: 2">CompTIA A+ Certified</p>
-                    <p class="display-5 lead mb-1">IT Professional</p>
-                    <p class="display-5 lead mb-1">Student</p>
+    <!-- Hero Section -->
+    <section class="hero text-white">
+        <div class="container">
+            <div class="row align-items-center justify-content-center gy-4 gx-lg-5">
+
+                <!-- Left: circle image -->
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <div class="circle-container" id="circleContainer"></div>
                 </div>
+
+                <!-- Right: name + title -->
+                <div class="col-12 col-lg-6 text-center text-lg-start" id="nameTitle">
+                    <h1 class="hero-heading fw-medium mb-3">
+                        Hello, my name is <strong>Alexander.</strong>
+                    </h1>
+                    <div class="title mb-1">
+                        <p>CompTIA A+ & Network+ Certified</p>
+                        <p>IT Professional</p>
+                        <p>Student</p>
+                    </div>
+                </div>
+
             </div>
-        </container>
+        </div>
     </section>
 
 
     <!-- Projects Section -->
-    <section class="container text-center px-4 py-5" id="projects">
-        <h2 class="section-title text-center fs-1">Projects</h2>
+    <section class="container full-height-section text-center px-4 py-5" id="projects">
+        <h1 class="section-title text-center fs-1">Projects</h1>
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
             <!-- Project 1 -->
             <div class="col">
@@ -115,7 +124,7 @@
         </div>
     </section>
     <!-- About Section -->
-    <section class="container-fluid bg-light py-5" id="aboutMe">
+    <section class="container-fluid full-height-section bg-light py-5" id="aboutMe">
         <h2 class="section-title text-center fs-1 align-items-center justify-content-center">About</h2>
 
         <div class="row g-4 align-items-stretch px-3 px-lg-4">
@@ -124,7 +133,7 @@
             <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
                 <!-- add card here -->
                 <div class="rounded w-100" style="height: auto;">
-                    <div id="cara2" class="carousel slide shadow-xlg" data-bs-ride="carousel"
+                    <div id="cara2" class="carousel slide shadow-xlg" data-bs-ride="carousel" data-bs-interval="19000"
                         style="width: 100%; height: auto;">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -132,8 +141,8 @@
                                     alt="picture of alex">
                             </div>
                             <div class="carousel-item">
-                                <img src="./Assets/img/alx2.JPEG"
-                                    class="d-block w-100 rounded-4 shadow-xlg about-photo" alt="picture of alex run">
+                                <img src="./Assets/img/alx2.JPEG" class="d-block w-100 rounded-4 shadow-xlg about-photo"
+                                    alt="picture of alex run">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#cara2"
@@ -169,7 +178,7 @@
                         <div class="p-4 text-bg-dark border border-white rounded-4 h-100 ">
                             <div class="p-md-3">
                                 <p class="lead fs-2 fw-bold mb-3">
-                                    My approach: 
+                                    My approach:
                                 </p>
                                 <p class="fs-3 opacity-75 mb-0">
                                     I am a quick learner, and always curious. A team player who believes cooperation is
@@ -185,14 +194,17 @@
     </section>
 
     <!-- skills tags section -->
-    <section class="container-fluid px-4 py-5" id="skills">
+    <section class="container-fluid full-height-section px-4 py-5" id="skills">
         <h2 class="section-title text-center fs-1 mb-4">Skills</h2>
         <!-- Filter Buttons -->
         <div class=" d-flex justify-content-center mb-4">
             <div class="btn-group" role="group">
-                <button class="btn btn-outline-secondary" onclick="filterSkillsBadge('all')">All</button>
-                <button class="btn btn-outline-secondary" onclick="filterSkillsBadge('technical')">Technical</button>
-                <button class="btn btn-outline-secondary" onclick="filterSkillsBadge('soft')">Soft Skills</button>
+                <button type="button" class="btn btn-outline-secondary skill-filter" data-skill-filter="all"
+                    aria-pressed="false">All</button>
+                <button type="button" class="btn btn-outline-secondary skill-filter" data-skill-filter="technical"
+                    aria-pressed="false">Technical</button>
+                <button type="button" class="btn btn-outline-secondary skill-filter" data-skill-filter="soft"
+                    aria-pressed="false">Soft Skills</button>
             </div>
         </div>
 
@@ -290,7 +302,7 @@
 
                     <div class="modal-body">
                         <div id="cara1" class="carousel slide shadow-xlg" data-bs-ride="carousel"
-                            style="width: 100%; height: auto;">
+                            data-bs-interval="19000" style="width: 100%; height: auto;">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
 
@@ -374,10 +386,12 @@
                         </ul>
 
                         <h6 class="mt-4 text-center">Challenges & Solutions</h6>
-                        <p> A project built with JavaScript, HTML5, and CSS3 created during my Boot Camp. Revised the UI.
+                        <p> A project built with JavaScript, HTML5, and CSS3 created during my Boot Camp. Revised the
+                            UI.
                             First interactions with JS and API integration. The first time i was able to build a working
                             application with real time data.
-                            Reading documentation and watching tutorials to understand JavaScript, and API integration helped me to finish this project.
+                            Reading documentation and watching tutorials to understand JavaScript, and API integration
+                            helped me to finish this project.
                         </p>
                         <a href="https://github.com/AlxMarz/Weather-Dash" target="_blank" class="btn btn-primary">View
                             GitHub Repository</a>
@@ -443,7 +457,7 @@
 
 
 
-<script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>

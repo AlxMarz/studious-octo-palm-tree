@@ -4,7 +4,7 @@
     --text-dark: #1f2937;
     --text-light: #6b7280;
     --bg-light: #f9fafb;
-    --white: #ffffff;
+    --white: #fefae0;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
@@ -45,6 +45,22 @@ body {
     background-position: center;
     /* Centers the image within the container */
     border: #fcfcfc 2px solid;
+}
+
+#nameTittle {
+    transform: translateX(0);
+}
+
+@media (min-width: 992px) {
+    #nameTittle {
+        transform: translateX(-30px);
+    }
+}
+
+@media (min-width: 1200px) {
+    #nameTittle {
+        transform: translateX(-60px);
+    }
 }
 
 .title {
@@ -95,13 +111,18 @@ body {
     height: 1.5em;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: hidden; 
 }
 
 .title p {
-    animation: textSequence 9s ease-in-out infinite;
+     animation: textSequence 9s ease-in-out infinite;
     position: absolute;
     margin: 0;
+    left: 0;
+    white-space: nowrap;      /* forces single line, no wrap */
+    font-size: clamp(1rem, 4vw, 2.5rem);
 }
 
 .title p:nth-child(1) {
@@ -135,6 +156,13 @@ body {
     box-shadow: #b1abab 1px 8px 30px 5px;
     border-radius: 20px;
 } */
+
+.full-height-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 ÷ #skills {

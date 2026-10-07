@@ -19,8 +19,8 @@
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous" defer></script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
+        defer></script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
@@ -53,25 +53,34 @@
     <!-- Hero Section -->
 
     <section class="jumbotron text-center text-white d-flex flex-column justify-content-center fw-bold"
-        style="min-height:100vh; background-image:linear-gradient(to bottom, #6bd370d6, #306f33d6,#0a0a0a); background-size: cover; background-position: center;">
-        <div class="circle-container d-flex mx-auto mb-4" id="circleContainer"></div>
-        <container class="container p-2" id="nameTittle">
-            <div class="jumbotron-heading">
-                <h1 class="display-1 text-center fw-medium p-3">Hello, my name is <strong>Alexander.</strong></h1>
-                <div class="title p-3">
-                    <!-- text animation  -->
-                    <p class="display-5 lead mb-1 text-shadow: 2">CompTIA A+ Certified</p>
-                    <p class="display-5 lead mb-1">IT Professional</p>
-                    <p class="display-5 lead mb-1">Student</p>
-                </div>
+        style="min-height:100vh; background-image:linear-gradient(to bottom, #588157,#344e41); background-size: cover; background-position: center;">
+        <div class="row align-items-center justify-content-center" style="min-height: 80vh;">
+            <!-- Left side: circle image -->
+            <div class="col-12 col-lg-6 d-flex justify-content-center mb-4 mb-lg-0">
+                <div class="circle-container" id="circleContainer"></div>
             </div>
-        </container>
+
+            <!-- Right side: name + title -->
+            <div class="col-12 col-lg-6 " id="nameTittle">
+                <container class="container p-2" id="nameTittle">
+                    <div class="jumbotron-heading text-center text-lg-start">
+                        <h1 class="display-1 fw-medium p-3">Hello, my name is <strong>Alexander.</strong></h1>
+                        <div class="title p-3 text-lg-start">
+                            <!-- text animation  -->
+                            <p class="display-5 lead mb-1 text-shadow: 2">CompTIA A+ Certified</p>
+                            <p class="display-5 lead mb-1">IT Professional</p>
+                            <p class="display-5 lead mb-1">Student</p>
+                        </div>
+                    </div>
+                </container>
+            </div>
+        </div>
     </section>
 
 
     <!-- Projects Section -->
-    <section class="container text-center px-4 py-5" id="projects">
-        <h2 class="section-title text-center fs-1">Projects</h2>
+    <section class="container full-height-section text-center px-4 py-5" id="projects">
+        <h1 class="section-title text-center fs-1">Projects</h1>
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
             <!-- Project 1 -->
             <div class="col">
@@ -115,7 +124,7 @@
         </div>
     </section>
     <!-- About Section -->
-    <section class="container-fluid bg-light py-5" id="aboutMe">
+    <section class="container-fluid full-height-section bg-light py-5" id="aboutMe">
         <h2 class="section-title text-center fs-1 align-items-center justify-content-center">About</h2>
 
         <div class="row row-cols-1 row-cols-lg-2">
@@ -171,7 +180,7 @@
                         <div class="p-4 text-bg-dark border border-white rounded-4 h-100 ">
                             <div class="p-md-3">
                                 <p class="lead fs-2 fw-bold mb-3">
-                                    My approach: 
+                                    My approach:
                                 </p>
                                 <p class="fs-3 opacity-75">
                                     I am a quick learner, and always curious. A team player who believes cooperation is
@@ -189,7 +198,7 @@
     </section>
 
     <!-- skills tags section -->
-    <section class="container-fluid px-4 py-5" id="skills">
+    <section class="container-fluid full-height-section px-4 py-5" id="skills">
         <h2 class="section-title text-center fs-1 mb-4">Skills</h2>
         <!-- Filter Buttons -->
         <div class=" d-flex justify-content-center mb-4">
@@ -378,10 +387,12 @@
                         </ul>
 
                         <h6 class="mt-4 text-center">Challenges & Solutions</h6>
-                        <p> A project built with JavaScript, HTML5, and CSS3 created during my Boot Camp. Revised the UI.
+                        <p> A project built with JavaScript, HTML5, and CSS3 created during my Boot Camp. Revised the
+                            UI.
                             First interactions with JS and API integration. The first time i was able to build a working
                             application with real time data.
-                            Reading documentation and watching tutorials to understand JavaScript, and API integration helped me to finish this project.
+                            Reading documentation and watching tutorials to understand JavaScript, and API integration
+                            helped me to finish this project.
                         </p>
                         <a href="https://github.com/AlxMarz/Weather-Dash" target="_blank" class="btn btn-primary">View
                             GitHub Repository</a>
@@ -447,7 +458,7 @@
 
 
 
-<script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
